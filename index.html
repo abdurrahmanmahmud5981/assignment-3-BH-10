@@ -11,10 +11,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remixicon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
     <!--  -->
+    <!--  -->
+    <style>
+        .bg{
+            background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        }
+    </style>
 </head>
 <body>
     <!--  -->
-    
+     <header class=" container mx-auto  bg">
+        <!-- navber start -->
+        <nav>
+            <div class="navbar justify-between ">
+                <!--  -->
+                <div class="navbar-start w-auto">
+                    <div class=" flex justify-center items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" class="size-7  bg-secondary rounded-full p-1">
+                          <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+                        </svg>
+                        
+                      <a class="text-3xl font-bold" href="#">Rinterio</a>
+                    </div>
+                    
+                  </div>
+                <!--  -->
+                <div class="navbar-center  hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-normal text-description">
+                      <li><a class="font-extrabold text-subTitle">Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                <!--  -->
+                <div class="navbar-end w-auto">
+                  <div class="md:flex gap-3 items-center hidden">
+                      <img class="border bg-white cursor-pointer w-10 h-10 p-2 rounded-full shadow" src="./assets/search.svg" alt="search">
+                      <img class="border bg-white cursor-pointer w-10 h-10 p-2 rounded-full shadow" src="./assets/shopping-cart-.svg" alt="shopping-cart">
+                      <!--  -->
+                     <button class="bg-secondary btn rounded-full h-auto min-h-0 flex justify-center items-center py-3 px-5">
+                        <a href="" class="text-xl font-extrabold">Book Consult </a>
+                        <i class="ri-arrow-right-up-line text-lg text-white bg-black rounded-full h-8 w-8 grid place-items-center  "></i>
+                        </button>
+                  </div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class=" btn btn-ghost p-0 hover:bg-transparent ml-2 lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-7 w-7 "
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 font-normal text-description">
+                      <li><a class="font-extrabold text-subTitle">Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </nav>
+     </header>
+    <!--  -->
+    <main>
+      
+    </main>
+    <!--  -->
+    <footer>
+
+    </footer>
 </body>
 </html>
