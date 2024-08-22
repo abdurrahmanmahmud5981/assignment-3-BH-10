@@ -1448,6 +1448,18 @@ html {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -1519,11 +1531,20 @@ html {
 .max-w-sm {
   max-width: 24rem;
 }
+.max-w-xl {
+  max-width: 36rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -1563,6 +1584,16 @@ html {
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1598,6 +1629,22 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-\[\#E7C1D3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 193 211 / var(--tw-bg-opacity));
+}
+.bg-\[\#77AAEA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 170 234 / var(--tw-bg-opacity));
+}
+.bg-\[\#A4DAC3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(164 218 195 / var(--tw-bg-opacity));
+}
+.bg-\[\#EFDA6E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 218 110 / var(--tw-bg-opacity));
+}
 .p-0 {
   padding: 0px;
 }
@@ -1612,6 +1659,9 @@ html {
 }
 .p-3 {
   padding: 0.75rem;
+}
+.p-6 {
+  padding: 1.5rem;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -1636,6 +1686,13 @@ html {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 .text-center {
   text-align: center;
@@ -1662,6 +1719,18 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -1696,6 +1765,10 @@ html {
   background-color: transparent;
 }
 @media (min-width: 640px) {
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
   .sm\:items-center {
     align-items: center;
@@ -1734,8 +1807,16 @@ html {
     max-width: 64rem;
   }
 
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
   }
 
   .lg\:text-left {
