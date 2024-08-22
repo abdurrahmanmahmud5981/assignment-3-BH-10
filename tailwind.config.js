@@ -16,7 +16,10 @@ module.exports = {
       fontFamily: {
         manrope: ['Manrope', 'Arial', 'sans-serif'],
       },
-      container:{center:true}
+      container:{
+        center:true,
+        
+      }
     },
   },
   plugins: [
