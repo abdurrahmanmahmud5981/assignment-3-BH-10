@@ -1,140 +1,231 @@
-<!DOCTYPE html  >
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignmet 3</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css" />
     <!-- manrop font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- remixicon cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
     <!--  -->
     <!--  -->
     <style>
-        .bg{
-            background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-        }
+      .bg {
+        background: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+      }
     </style>
-</head>
-<body class="font-manrope">
+  </head>
+  <body class="font-manrope">
     <!--  -->
-     <header class=" container mx-auto  bg max-w-7xl ">
-        <!-- navber start -->
-        <nav>
-            <div class="navbar px-4 justify-between ">
-                <!--  -->
-                <div class="navbar-start w-auto">
-                    <div class=" flex justify-center items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" class="size-7  bg-secondary rounded-full p-1">
-                          <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
-                        </svg>
-                        
-                      <a class="text-3xl font-bold" href="#">Rinterio</a>
-                    </div>
-                    
-                  </div>
-                <!--  -->
-                <div class="navbar-center  hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 font-normal text-description">
-                      <li><a class="font-extrabold text-subTitle">Home</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact Us</a></li>
-                    </ul>
-                  </div>
-                <!--  -->
-                <div class="navbar-end w-auto">
-                  <div class="md:flex gap-3 items-center hidden">
-                      <img class="border bg-white cursor-pointer w-10 h-10 p-2 rounded-full shadow" src="./assets/search.svg" alt="search">
-                      <img class="border bg-white cursor-pointer w-10 h-10 p-2 rounded-full shadow" src="./assets/shopping-cart-.svg" alt="shopping-cart">
-                      <!--  -->
-                     <button class="bg-secondary btn rounded-full h-auto min-h-0 flex justify-center items-center py-3 px-5">
-                        <a href="" class="text-xl font-extrabold">Book Consult </a>
-                        <i class="ri-arrow-right-up-line text-lg text-white bg-black rounded-full h-8 w-8 grid place-items-center  "></i>
-                        </button>
-                  </div>
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class=" btn btn-ghost p-0 hover:bg-transparent ml-2 lg:hidden  h-auto">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-11 w-11  p-3  border rounded-full bg-white shadow  "
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 font-normal text-description">
-                      <li><a class="font-extrabold text-subTitle">Home</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact Us</a></li>
-                    </ul>
-                  </div>
-                </div>
+    <header class="container mx-auto bg max-w-7xl">
+      <!-- navber start -->
+      <nav>
+        <div class="navbar px-4 justify-between">
+          <!--  -->
+          <div class="navbar-start w-auto">
+            <div class="flex justify-center items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill=""
+                class="size-7 bg-secondary rounded-full p-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <a class="text-3xl font-bold" href="#">Rinterio</a>
             </div>
-        </nav>
-        <!-- banner start -->
-         <div class="  flex flex-col sm:items-center gap-6 text-center  lg:max-w-5xl mx-auto px-4 my-8">
-          <img src="./assets/banner.png" alt="banner image">
-          <h1 class="text-3xl  sm:text-6xl font-extrabold">A barn house of this design has a striking appearance </h1>
-          <p class="text-base font-medium text-description">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-          <button class="btn h-auto flex items-center bg-secondary/50 rounded-full">
-            <a href="" class="text-xl font-bold">View Details</a>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" class="size-7  bg-secondary rounded-full p-1">
-              <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
-            </svg>
-          </button>
-         </div>
-     </header>
+          </div>
+          <!--  -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-normal text-description">
+              <li><a class="font-extrabold text-subTitle">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="navbar-end w-auto">
+            <div class="md:flex gap-3 items-center hidden">
+              <img
+                class="border bg-white cursor-pointer w-10 h-10 p-2 rounded-full shadow"
+                src="./assets/search.svg"
+                alt="search"
+              />
+              <img
+                class="border bg-white cursor-pointer w-10 h-10 p-2 rounded-full shadow"
+                src="./assets/shopping-cart-.svg"
+                alt="shopping-cart"
+              />
+              <!--  -->
+              <button
+                class="bg-secondary btn rounded-full h-auto min-h-0 flex justify-center items-center py-3 px-5"
+              >
+                <a href="" class="text-xl font-extrabold">Book Consult </a>
+                <i
+                  class="ri-arrow-right-up-line text-lg text-white bg-black rounded-full h-8 w-8 grid place-items-center"
+                ></i>
+              </button>
+            </div>
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost p-0 hover:bg-transparent ml-2 lg:hidden h-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-11 w-11 p-3 border rounded-full bg-white shadow"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 font-normal text-description"
+              >
+                <li><a class="font-extrabold text-subTitle">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- banner start -->
+      <div
+        class="flex flex-col sm:items-center gap-6 text-center lg:max-w-5xl mx-auto px-4 my-8"
+      >
+        <img src="./assets/banner.png" alt="banner image" />
+        <h1 class="text-3xl sm:text-6xl font-extrabold">
+          A barn house of this design has a striking appearance
+        </h1>
+        <p class="text-base font-medium text-description">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+        <button
+          class="btn h-auto flex items-center bg-secondary/50 rounded-full"
+        >
+          <a href="" class="text-xl font-bold">View Details</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill=""
+            class="size-7 bg-secondary rounded-full p-1"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
     <!--  -->
     <main class="bg-primary">
       <!-- About Us Section -->
-       <section class="flex flex-col xl:flex-row justify-between container mx-auto py-24 px-4 max-w-7xl gap-9 ">
-        <div class=" relative flex flex-col  items-center xl:items-start ">
-          <img class="absolute -top-16 -left-12 hidden xl:block" src="./assets/Vector.png" alt="Vector">
-          <a class=" rounded-full bg-white px-5 py-3 flex items-center gap-3 w-fit " href=""><i class="text-description fa-solid fa-arrow-right-long"></i> <span class="font-bold text-subTitle">About Us</span></a>
-          <h2 class="xl:max-w-[450px] text-4xl font-extrabold mt-6 text-center">We design thoughtful, liveable spaces</h2>
-          <p class="text-base font-medium text-description xl:max-w-[560px] my-8 text-center">The barn house captivates with its blend of rustic charm and 
-            modern sophistication, featuring weathered wood, sleek metal accents.</p>
-           <div class=" flex flex-col lg:flex-row  xl:flex-col gap-9  w-full">
-            <div class="flex flec items-start md:items-center bg-white p-10 py-5 rounded-2xl  gap-5">
-              <img src="./assets/commercial.png" alt="commercial">
-              <div class=" space-y-3  max-w-sm">
-                <h3 class="text-xl font-extrabold text-subTitle ">Commercial</h3>
-                <p  class="text-base font-medium text-description">The barn house captivates with its blend of rustic charm and modern.</p>
+      <section
+        class="flex flex-col xl:flex-row justify-between container mx-auto py-24 px-4 max-w-7xl gap-9"
+      >
+        <div class="relative flex flex-col items-center xl:items-start">
+          <img
+            class="absolute -top-16 -left-12 hidden xl:block"
+            src="./assets/Vector.png"
+            alt="Vector"
+          />
+          <a
+            class="rounded-full bg-white px-5 py-3 flex items-center gap-3 w-fit"
+            href=""
+            ><i class="text-description fa-solid fa-arrow-right-long"></i>
+            <span class="font-bold text-subTitle">About Us</span></a
+          >
+          <h2
+            class="xl:max-w-[450px] text-4xl font-extrabold mt-6 text-center lg:text-left"
+          >
+            We design thoughtful, liveable spaces
+          </h2>
+          <p
+            class="text-base font-medium text-description xl:max-w-[560px] my-8 text-center lg:text-left"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <div class="flex flex-col lg:flex-row xl:flex-col gap-9 w-full">
+            <div
+              class="flex flec items-start md:items-center bg-white p-10 py-5 rounded-2xl gap-5"
+            >
+              <img src="./assets/commercial.png" alt="commercial" />
+              <div class="space-y-3 max-w-sm">
+                <h3 class="text-xl font-extrabold text-subTitle">Commercial</h3>
+                <p class="text-base font-medium text-description">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
               </div>
             </div>
-            <div class="flex flec items-start md:items-center bg-white p-10 py-5 rounded-2xl  gap-5">
-              <img src="./assets/residential.png" alt="residential">
-              <div class=" space-y-3  max-w-sm">
-                <h3 class="text-xl font-extrabold text-subTitle">Residential</h3>
-                <p  class="text-base font-medium text-description">The barn house captivates with its blend of rustic charm and modern.</p>
+            <div
+              class="flex flec items-start md:items-center bg-white p-10 py-5 rounded-2xl gap-5"
+            >
+              <img src="./assets/residential.png" alt="residential" />
+              <div class="space-y-3 max-w-sm">
+                <h3 class="text-xl font-extrabold text-subTitle">
+                  Residential
+                </h3>
+                <p class="text-base font-medium text-description">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
               </div>
             </div>
-           </div>
+          </div>
         </div>
         <div class="">
-          <img class="h-auto w-full" src="./assets/Rectangle.png" alt="about us image">
+          <img
+            class="h-auto w-full"
+            src="./assets/Rectangle.png"
+            alt="about us image"
+          />
         </div>
-       </section>
+      </section>
     </main>
     <!--  -->
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
